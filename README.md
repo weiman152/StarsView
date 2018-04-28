@@ -7,6 +7,8 @@
 
 使用：
 
+{
+
 //
 //  ViewController.swift
 //  StarsView
@@ -58,6 +60,9 @@ class ViewController: UIViewController {
         starsView3.reduceStarAnimation(changeStar: 2)
     }
     
+}
+
+
 }
 
 如果要自定义图片的话，只需要把亮星星命名成 starlight ，把暗星星命名成 stardark就可以了。
