@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarsView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDE-qO-4jn" userLabel="Stars View1" customClass="StarsView" customModule="StarsView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="60" width="80" height="32"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.074509803920000006" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4nX-8H-gRu"/>
+                                    <constraint firstAttribute="height" constant="32" id="Afo-8F-hds"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Quq-Fq-WPn" userLabel="StarsView2" customClass="StarsView" customModule="StarsView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="122" width="120" height="48"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.074509803920000006" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="65L-uU-9YW"/>
+                                    <constraint firstAttribute="width" constant="120" id="Szc-3Q-6Bc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCQ-C5-gWx" userLabel="Stars View3" customClass="StarsView" customModule="StarsView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="200" width="120" height="72"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.074509803920000006" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="JvM-je-zoA"/>
+                                    <constraint firstAttribute="width" constant="120" id="VN6-Oa-6Qd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqO-Zg-1ta">
+                                <rect key="frame" x="30" y="332" width="31" height="30"/>
+                                <state key="normal" title="重置">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reSet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyq-s3-oax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtC-1J-s9r">
+                                <rect key="frame" x="299" y="332" width="46" height="30"/>
+                                <state key="normal" title="减星星">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="jianStar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gS8-A9-WB4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTC-KH-jWI">
+                                <rect key="frame" x="161" y="332" width="46" height="30"/>
+                                <state key="normal" title="加星星">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addStar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8f-HP-ROw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wCQ-C5-gWx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0P9-Dx-EPq"/>
+                            <constraint firstItem="kqO-Zg-1ta" firstAttribute="top" secondItem="wCQ-C5-gWx" secondAttribute="bottom" constant="60" id="3B8-Fq-kS5"/>
+                            <constraint firstItem="sDE-qO-4jn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="KsO-WH-MId"/>
+                            <constraint firstItem="UTC-KH-jWI" firstAttribute="leading" secondItem="kqO-Zg-1ta" secondAttribute="trailing" constant="100" id="NAs-b4-7Qv"/>
+                            <constraint firstItem="wCQ-C5-gWx" firstAttribute="top" secondItem="Quq-Fq-WPn" secondAttribute="bottom" constant="30" id="cxd-ZK-eXE"/>
+                            <constraint firstItem="UTC-KH-jWI" firstAttribute="centerY" secondItem="kqO-Zg-1ta" secondAttribute="centerY" id="hvL-7a-dyD"/>
+                            <constraint firstItem="Quq-Fq-WPn" firstAttribute="top" secondItem="sDE-qO-4jn" secondAttribute="bottom" constant="30" id="iWR-do-E1p"/>
+                            <constraint firstItem="LtC-1J-s9r" firstAttribute="centerY" secondItem="kqO-Zg-1ta" secondAttribute="centerY" id="lr6-bk-Vl0"/>
+                            <constraint firstItem="kqO-Zg-1ta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tzK-sR-BhG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LtC-1J-s9r" secondAttribute="trailing" constant="30" id="vdb-69-FB4"/>
+                            <constraint firstItem="sDE-qO-4jn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wvj-mU-PKM"/>
+                            <constraint firstItem="Quq-Fq-WPn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yn4-tb-bul"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="starsView" destination="sDE-qO-4jn" id="HJL-ZH-12A"/>
+                        <outlet property="starsView2" destination="Quq-Fq-WPn" id="38U-jm-EM2"/>
+                        <outlet property="starsView3" destination="wCQ-C5-gWx" id="Zqe-p9-SHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
