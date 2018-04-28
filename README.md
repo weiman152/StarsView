@@ -7,8 +7,6 @@
 
 使用：
 
-{
-
 //
 //  ViewController.swift
 //  StarsView
@@ -63,7 +61,8 @@ class ViewController: UIViewController {
 }
 
 
-}
-
 如果要自定义图片的话，只需要把亮星星命名成 starlight ，把暗星星命名成 stardark就可以了。
+
+![Alt text](https://github.com/weiman152/StarsView/ScreenShots/img.gif)
+
 
