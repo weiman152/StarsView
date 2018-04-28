@@ -2,8 +2,15 @@
 这是一个简单的封装等级中加星星减星星动画的view.
 
 1.支持自定义星星总数，当前显示星星数，每一次增加和减少星星个数，每一行显示星星个数；
+
 2.星星的大小是根据父view的大小计算得来的
+
 3.支持自定义星星图片
+
+截图：
+
+![Alt text](https://github.com/weiman152/StarsView/blob/master/ScreenShots/1.png)
+
 
 使用：
 
