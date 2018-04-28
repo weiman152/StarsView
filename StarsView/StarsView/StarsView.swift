@@ -214,8 +214,8 @@ extension StarsView {
             let X: CGFloat = col * starWidth
             let Y: CGFloat = row * starHeight
             button.frame = CGRect(x: X, y: Y, width: starWidth, height: starHeight)
-            button.setImage(#imageLiteral(resourceName: "battles_single_star_purple"), for: .normal)
-            button.setImage(#imageLiteral(resourceName: "battles_single_star_yellow"), for: .selected)
+            button.setImage(#imageLiteral(resourceName: "stardark"), for: .normal)
+            button.setImage(#imageLiteral(resourceName: "starlight"), for: .selected)
         }
     }
 }
@@ -264,7 +264,7 @@ extension StarsView {
         let animationButton = UIButton(type: .custom)
         superview.addSubview(animationButton)
         animationButton.frame = button.frame
-        animationButton.setImage(#imageLiteral(resourceName: "battles_single_star_yellow"), for: .normal)
+        animationButton.setImage(#imageLiteral(resourceName: "starlight"), for: .normal)
         
         // 暗星星先放大
         let transformPurple = CGAffineTransform(scaleX: 1.5, y: 1.5)
@@ -305,7 +305,7 @@ extension StarsView {
         let animationButton = UIButton(type: .custom)
         superview.addSubview(animationButton)
         animationButton.frame = button.frame
-        animationButton.setImage(#imageLiteral(resourceName: "battles_single_star_yellow"), for: .normal)
+        animationButton.setImage(#imageLiteral(resourceName: "starlight"), for: .normal)
         
         // 黄色星星变大
         UIView.animate(withDuration: 0.16, animations: {
